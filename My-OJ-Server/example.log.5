@@ -1,0 +1,872 @@
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10010, pstmt-20036} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10010} pool-recycle
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10010} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10009} closed
+DEBUG Druid-ConnectionPool-Create-1982575236 druid.sql.Connection - {conn-10011,procId-230} connected
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10011} pool-connect
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10011, pstmt-20037} created. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10011, pstmt-20037} Parameters : [0]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10011, pstmt-20037} Types : [INTEGER]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10011, pstmt-20037} executed. 43.8963 millis. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} open
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Header: [question, floor, from, to, content]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Result: [0, 2, NorthBoat, 0, 测试一下啊]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Result: [0, 3, NorthBoat, 2, 哈哈哈]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Result: [0, 4, NorthBoat, 0, nmsl]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Result: [0, 5, NorthBoat, 4, wdnmd]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Result: [0, 6, NorthBoat, 4, 测一下]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Result: [0, 7, NorthBoat, 2, 再测一下]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Result: [0, 8, NorthBoat, 4, 这次应该好了]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Result: [0, 9, NorthBoat, 0, 怎么说]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Result: [0, 10, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Result: [0, 11, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} Result: [0, 12, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10011, pstmt-20037, rs-50029} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10011, pstmt-20037} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10011} pool-recycle
+DEBUG Druid-ConnectionPool-Create-2102178103 druid.sql.Connection - {conn-10001,procId-231} connected
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG Druid-ConnectionPool-Create-2102178103 druid.sql.Connection - {conn-10002,procId-232} connected
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10002, pstmt-20000} created. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20001} created. select * from `question` where num=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10002, pstmt-20000} Parameters : [0]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20001} Parameters : [0]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10002, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20001} Types : [INTEGER]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20001} executed. 65.1354 millis. select * from `question` where num=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10002, pstmt-20000} executed. 65.1365 millis. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} open
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20001, rs-50000} open
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20001, rs-50000} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Header: [question, floor, from, to, content]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20001, rs-50000} Result: [0, 翻转整数, 易, 0, 7, reverseNum, Stack&Queue, int reverseNum(int num)]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Result: [0, 2, NorthBoat, 0, 测试一下啊]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Result: [0, 3, NorthBoat, 2, 哈哈哈]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20001, rs-50000} closed
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Result: [0, 4, NorthBoat, 0, nmsl]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20001} closed
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Result: [0, 5, NorthBoat, 4, wdnmd]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Result: [0, 6, NorthBoat, 4, 测一下]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Result: [0, 7, NorthBoat, 2, 再测一下]
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Result: [0, 8, NorthBoat, 4, 这次应该好了]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Result: [0, 9, NorthBoat, 0, 怎么说]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Result: [0, 10, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Result: [0, 11, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} Result: [0, 12, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10002, pstmt-20000, rs-50001} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10002, pstmt-20000} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20002} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20002} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20002} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20002} executed. 41.9359 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20002, rs-50002} open
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20002, rs-50002} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20002, rs-50002} Result: [1543625674@qq.com, 0, 编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 5: error: missing return statement
+	}
+	^
+1 error
+, 3006ms, 887ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20002, rs-50002} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20002} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10002, pstmt-20003} created. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10002, pstmt-20003} Parameters : [1543625674@qq.com]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10002, pstmt-20003} Types : [VARCHAR]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10002, pstmt-20003} executed. 73.2915 millis. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10002, pstmt-20003, rs-50003} open
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10002, pstmt-20003, rs-50003} Header: [account, name, finished, simple_finished, middle_finished, hard_finished, finished_index, register_time, grade, skillful_lang, java_finished, c_finished, python_finished]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10002, pstmt-20003, rs-50003} Result: [1543625674@qq.com, NorthBoat, 1, 0, 0, 0, 1, 2022-04-05 06:05:05.0, null, Java, 1, 0, 0]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10002, pstmt-20003, rs-50003} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10002, pstmt-20003} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10002, pstmt-20004} created. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10002, pstmt-20004} Parameters : [1, 1, 0, 0, 1, Java, 1543625674@qq.com]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10002, pstmt-20004} Types : [INTEGER, INTEGER, INTEGER, INTEGER, VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10002, pstmt-20004} executed. 93.0638 millis. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10002, pstmt-20004} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10002, pstmt-20005} created. select * from `question`
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10002, pstmt-20005} Parameters : []
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10002, pstmt-20005} Types : []
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10002, pstmt-20005} executed. 43.2577 millis. select * from `question`
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10002, pstmt-20005, rs-50004} open
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10002, pstmt-20005, rs-50004} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10002, pstmt-20005, rs-50004} Result: [0, 翻转整数, 易, 0, 7, reverseNum, Stack&Queue, int reverseNum(int num)]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10002, pstmt-20005, rs-50004} closed
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10002, pstmt-20005} closed
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8089-exec-9 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10002, pstmt-20006} created. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10002, pstmt-20006} Parameters : [0]
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10002, pstmt-20006} Types : [INTEGER]
+DEBUG http-nio-8089-exec-10 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10001, pstmt-20007} created. select * from `question` where num=?
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10001, pstmt-20007} Parameters : [0]
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10001, pstmt-20007} Types : [INTEGER]
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10002, pstmt-20006} executed. 40.7938 millis. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10002, pstmt-20006, rs-50005} open
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10002, pstmt-20006, rs-50005} Header: [num, title, desc, memory_limit, time_limit, example_input, example_output, tips, customized]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10002, pstmt-20006, rs-50005} Result: [0, 翻转整数, 将整数翻转过来, 0, 4, 1234, 4321, 栈, 1]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10002, pstmt-20006, rs-50005} closed
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10002, pstmt-20006} closed
+DEBUG http-nio-8089-exec-9 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10001, pstmt-20007} executed. 40.4999 millis. select * from `question` where num=?
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10001, pstmt-20007, rs-50006} open
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10001, pstmt-20007, rs-50006} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10001, pstmt-20007, rs-50006} Result: [0, 翻转整数, 易, 0, 7, reverseNum, Stack&Queue, int reverseNum(int num)]
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10001, pstmt-20007, rs-50006} closed
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10001, pstmt-20007} closed
+DEBUG http-nio-8089-exec-10 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20008} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20008} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20008} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20008} executed. 48.9598 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20008, rs-50007} open
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20008, rs-50007} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20008, rs-50007} Result: [1543625674@qq.com, 0, 编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 5: error: missing return statement
+	}
+	^
+1 error
+, 3006ms, 887ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20008, rs-50007} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20008} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20009} created. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20009} Parameters : [0]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20009} Types : [INTEGER]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20009} executed. 40.6049 millis. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} open
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Header: [question, floor, from, to, content]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Result: [0, 2, NorthBoat, 0, 测试一下啊]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Result: [0, 3, NorthBoat, 2, 哈哈哈]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Result: [0, 4, NorthBoat, 0, nmsl]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Result: [0, 5, NorthBoat, 4, wdnmd]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Result: [0, 6, NorthBoat, 4, 测一下]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Result: [0, 7, NorthBoat, 2, 再测一下]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Result: [0, 8, NorthBoat, 4, 这次应该好了]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Result: [0, 9, NorthBoat, 0, 怎么说]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Result: [0, 10, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Result: [0, 11, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} Result: [0, 12, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20009, rs-50008} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20009} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20010} created. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20010} Parameters : [0]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20010} Types : [INTEGER]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20010} executed. 40.6921 millis. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10001, pstmt-20010, rs-50009} open
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10001, pstmt-20010, rs-50009} Header: [num, title, desc, memory_limit, time_limit, example_input, example_output, tips, customized]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10001, pstmt-20010, rs-50009} Result: [0, 翻转整数, 将整数翻转过来, 0, 4, 1234, 4321, 栈, 1]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10001, pstmt-20010, rs-50009} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20010} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20011} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20011} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20011} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20011} executed. 42.2786 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20011, rs-50010} open
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20011, rs-50010} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20011, rs-50010} Result: [1543625674@qq.com, 0, 编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 5: error: missing return statement
+	}
+	^
+1 error
+, 3006ms, 887ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20011, rs-50010} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20011} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-6 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20012} created. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20012} Parameters : [0]
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20012} Types : [INTEGER]
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20012} executed. 40.2663 millis. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} open
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Header: [question, floor, from, to, content]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Result: [0, 2, NorthBoat, 0, 测试一下啊]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Result: [0, 3, NorthBoat, 2, 哈哈哈]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Result: [0, 4, NorthBoat, 0, nmsl]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Result: [0, 5, NorthBoat, 4, wdnmd]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Result: [0, 6, NorthBoat, 4, 测一下]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Result: [0, 7, NorthBoat, 2, 再测一下]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Result: [0, 8, NorthBoat, 4, 这次应该好了]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Result: [0, 9, NorthBoat, 0, 怎么说]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Result: [0, 10, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Result: [0, 11, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} Result: [0, 12, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20012, rs-50011} closed
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20012} closed
+DEBUG http-nio-8089-exec-6 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20013} created. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20013} Parameters : [0]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20013} Types : [INTEGER]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20013} executed. 43.8064 millis. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10001, pstmt-20013, rs-50012} open
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10001, pstmt-20013, rs-50012} Header: [num, title, desc, memory_limit, time_limit, example_input, example_output, tips, customized]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10001, pstmt-20013, rs-50012} Result: [0, 翻转整数, 将整数翻转过来, 0, 4, 1234, 4321, 栈, 1]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10001, pstmt-20013, rs-50012} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20013} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10001} closed
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10002} closed
+DEBUG Druid-ConnectionPool-Create-2102178103 druid.sql.Connection - {conn-10003,procId-233} connected
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10003, pstmt-20014} created. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10003, pstmt-20014} Parameters : [1543625674@qq.com]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10003, pstmt-20014} Types : [VARCHAR]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10003, pstmt-20014} executed. 45.9857 millis. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10003, pstmt-20014, rs-50013} open
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10003, pstmt-20014, rs-50013} Header: [account, name, finished, simple_finished, middle_finished, hard_finished, finished_index, register_time, grade, skillful_lang, java_finished, c_finished, python_finished]
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10003, pstmt-20014, rs-50013} Result: [1543625674@qq.com, NorthBoat, 1, 0, 0, 0, 1, 2022-04-05 06:05:05.0, null, Java, 1, 0, 0]
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10003, pstmt-20014, rs-50013} closed
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10003, pstmt-20014} closed
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10003, pstmt-20015} created. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10003, pstmt-20015} Parameters : [1, 1, 0, 0, 1, Java, 1543625674@qq.com]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10003, pstmt-20015} Types : [INTEGER, INTEGER, INTEGER, INTEGER, VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10003, pstmt-20015} executed. 84.38 millis. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10003, pstmt-20015} closed
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10003, pstmt-20016} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10003, pstmt-20016} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10003, pstmt-20016} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10003, pstmt-20016} executed. 42.2503 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10003, pstmt-20016, rs-50014} open
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10003, pstmt-20016, rs-50014} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10003, pstmt-20016, rs-50014} Result: [1543625674@qq.com, 0, 编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 5: error: missing return statement
+	}
+	^
+1 error
+, 3006ms, 887ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10003, pstmt-20016, rs-50014} closed
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10003, pstmt-20016} closed
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10003, pstmt-20017} created. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10003, pstmt-20017} Parameters : [编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 5: error: missing return statement
+	}
+	^
+1 error
+, 8215, 861ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}, 1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10003, pstmt-20017} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10003, pstmt-20017} executed. 84.6981 millis. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10003, pstmt-20017} closed
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-9 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10003, pstmt-20018} created. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10003, pstmt-20018} Parameters : [0]
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10003, pstmt-20018} Types : [INTEGER]
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10003, pstmt-20018} executed. 46.929 millis. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} open
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Header: [question, floor, from, to, content]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Result: [0, 2, NorthBoat, 0, 测试一下啊]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Result: [0, 3, NorthBoat, 2, 哈哈哈]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Result: [0, 4, NorthBoat, 0, nmsl]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Result: [0, 5, NorthBoat, 4, wdnmd]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Result: [0, 6, NorthBoat, 4, 测一下]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Result: [0, 7, NorthBoat, 2, 再测一下]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Result: [0, 8, NorthBoat, 4, 这次应该好了]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Result: [0, 9, NorthBoat, 0, 怎么说]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Result: [0, 10, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Result: [0, 11, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} Result: [0, 12, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20018, rs-50015} closed
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10003, pstmt-20018} closed
+DEBUG http-nio-8089-exec-9 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-10 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10003, pstmt-20019} created. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10003, pstmt-20019} Parameters : [0]
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10003, pstmt-20019} Types : [INTEGER]
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10003, pstmt-20019} executed. 43.0417 millis. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10003, pstmt-20019, rs-50016} open
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10003, pstmt-20019, rs-50016} Header: [num, title, desc, memory_limit, time_limit, example_input, example_output, tips, customized]
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10003, pstmt-20019, rs-50016} Result: [0, 翻转整数, 将整数翻转过来, 0, 4, 1234, 4321, 栈, 1]
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10003, pstmt-20019, rs-50016} closed
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10003, pstmt-20019} closed
+DEBUG http-nio-8089-exec-10 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10003, pstmt-20020} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10003, pstmt-20020} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10003, pstmt-20020} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10003, pstmt-20020} executed. 43.6967 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10003, pstmt-20020, rs-50017} open
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10003, pstmt-20020, rs-50017} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10003, pstmt-20020, rs-50017} Result: [1543625674@qq.com, 0, 编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 5: error: missing return statement
+	}
+	^
+1 error
+, 8215, 861ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10003, pstmt-20020, rs-50017} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10003, pstmt-20020} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10003, pstmt-20021} created. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10003, pstmt-20021} Parameters : [1543625674@qq.com]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10003, pstmt-20021} Types : [VARCHAR]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10003, pstmt-20021} executed. 82.6165 millis. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10003, pstmt-20021, rs-50018} open
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10003, pstmt-20021, rs-50018} Header: [account, name, finished, simple_finished, middle_finished, hard_finished, finished_index, register_time, grade, skillful_lang, java_finished, c_finished, python_finished]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10003, pstmt-20021, rs-50018} Result: [1543625674@qq.com, NorthBoat, 1, 0, 0, 0, 1, 2022-04-05 06:05:05.0, null, Java, 1, 0, 0]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10003, pstmt-20021, rs-50018} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10003, pstmt-20021} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10003, pstmt-20022} created. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10003, pstmt-20022} Parameters : [1, 1, 0, 0, 1, Java, 1543625674@qq.com]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10003, pstmt-20022} Types : [INTEGER, INTEGER, INTEGER, INTEGER, VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10003, pstmt-20022} executed. 91.4479 millis. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10003, pstmt-20022} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10003, pstmt-20023} created. select * from `question` where num=?
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10003, pstmt-20023} Parameters : [0]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10003, pstmt-20023} Types : [INTEGER]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10003, pstmt-20023} executed. 44.2763 millis. select * from `question` where num=?
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10003, pstmt-20023, rs-50019} open
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10003, pstmt-20023, rs-50019} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10003, pstmt-20023, rs-50019} Result: [0, 翻转整数, 易, 0, 7, reverseNum, Stack&Queue, int reverseNum(int num)]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10003, pstmt-20023, rs-50019} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10003, pstmt-20023} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10003, pstmt-20024} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10003, pstmt-20024} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10003, pstmt-20024} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10003, pstmt-20024} executed. 43.3941 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10003, pstmt-20024, rs-50020} open
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10003, pstmt-20024, rs-50020} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10003, pstmt-20024, rs-50020} Result: [1543625674@qq.com, 0, 编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 5: error: missing return statement
+	}
+	^
+1 error
+, 8215, 861ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10003, pstmt-20024, rs-50020} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10003, pstmt-20024} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10003, pstmt-20025} created. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10003, pstmt-20025} Parameters : [解答错误 TAT, 通过样例:, 当前样例:, 正确答案:, 当前答案:, 1, 245, 542, 23, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 23;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}, 1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10003, pstmt-20025} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10003, pstmt-20025} executed. 85.7061 millis. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10003, pstmt-20025} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG Druid-ConnectionPool-Create-2102178103 druid.sql.Connection - {conn-10004,procId-234} connected
+DEBUG http-nio-8089-exec-6 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10004, pstmt-20026} created. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10004, pstmt-20026} Parameters : [0]
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10004, pstmt-20026} Types : [INTEGER]
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10004, pstmt-20026} executed. 50.8495 millis. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10004, pstmt-20026, rs-50021} open
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10004, pstmt-20026, rs-50021} Header: [num, title, desc, memory_limit, time_limit, example_input, example_output, tips, customized]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10004, pstmt-20026, rs-50021} Result: [0, 翻转整数, 将整数翻转过来, 0, 4, 1234, 4321, 栈, 1]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10004, pstmt-20026, rs-50021} closed
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10004, pstmt-20026} closed
+DEBUG http-nio-8089-exec-6 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10004, pstmt-20027} created. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10004, pstmt-20027} Parameters : [1543625674@qq.com]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10004, pstmt-20027} Types : [VARCHAR]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10004, pstmt-20027} executed. 70.1835 millis. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10004, pstmt-20027, rs-50022} open
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10004, pstmt-20027, rs-50022} Header: [account, name, finished, simple_finished, middle_finished, hard_finished, finished_index, register_time, grade, skillful_lang, java_finished, c_finished, python_finished]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10004, pstmt-20027, rs-50022} Result: [1543625674@qq.com, NorthBoat, 1, 0, 0, 0, 1, 2022-04-05 06:05:05.0, null, Java, 1, 0, 0]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10004, pstmt-20027, rs-50022} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10004, pstmt-20027} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10004, pstmt-20028} created. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10004, pstmt-20028} Parameters : [1, 1, 0, 0, 1, Java, 1543625674@qq.com]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10004, pstmt-20028} Types : [INTEGER, INTEGER, INTEGER, INTEGER, VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10004, pstmt-20028} executed. 91.3791 millis. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10004, pstmt-20028} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10004, pstmt-20029} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10004, pstmt-20029} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10004, pstmt-20029} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10004, pstmt-20029} executed. 41.487 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10004, pstmt-20029, rs-50023} open
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10004, pstmt-20029, rs-50023} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10004, pstmt-20029, rs-50023} Result: [1543625674@qq.com, 0, 解答错误 TAT, 通过样例:, 当前样例:, 正确答案:, 当前答案:, 1, 245, 542, 23, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 23;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10004, pstmt-20029, rs-50023} closed
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10004, pstmt-20029} closed
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10004, pstmt-20030} created. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10004, pstmt-20030} Parameters : [编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 4: error: incompatible types: boolean cannot be converted to int
+            return true;
+                   ^
+1 error
+, 8069, 856ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return true;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}, 1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10004, pstmt-20030} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10004, pstmt-20030} executed. 81.376 millis. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10004, pstmt-20030} closed
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10004, pstmt-20031} created. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10004, pstmt-20031} Parameters : [0]
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10004, pstmt-20031} Types : [INTEGER]
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10004, pstmt-20031} executed. 48.2826 millis. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} open
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Header: [question, floor, from, to, content]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Result: [0, 2, NorthBoat, 0, 测试一下啊]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Result: [0, 3, NorthBoat, 2, 哈哈哈]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Result: [0, 4, NorthBoat, 0, nmsl]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Result: [0, 5, NorthBoat, 4, wdnmd]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Result: [0, 6, NorthBoat, 4, 测一下]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Result: [0, 7, NorthBoat, 2, 再测一下]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Result: [0, 8, NorthBoat, 4, 这次应该好了]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Result: [0, 9, NorthBoat, 0, 怎么说]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Result: [0, 10, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Result: [0, 11, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} Result: [0, 12, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10004, pstmt-20031, rs-50024} closed
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10004, pstmt-20031} closed
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-9 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10004, pstmt-20032} created. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10004, pstmt-20032} Parameters : [0]
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10004, pstmt-20032} Types : [INTEGER]
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10004, pstmt-20032} executed. 53.5594 millis. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10004, pstmt-20032, rs-50025} open
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10004, pstmt-20032, rs-50025} Header: [num, title, desc, memory_limit, time_limit, example_input, example_output, tips, customized]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10004, pstmt-20032, rs-50025} Result: [0, 翻转整数, 将整数翻转过来, 0, 4, 1234, 4321, 栈, 1]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10004, pstmt-20032, rs-50025} closed
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10004, pstmt-20032} closed
+DEBUG http-nio-8089-exec-9 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-10 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10004, pstmt-20033} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10004, pstmt-20033} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10004, pstmt-20033} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10004, pstmt-20033} executed. 43.6702 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10004, pstmt-20033, rs-50026} open
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10004, pstmt-20033, rs-50026} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10004, pstmt-20033, rs-50026} Result: [1543625674@qq.com, 0, 编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 4: error: incompatible types: boolean cannot be converted to int
+            return true;
+                   ^
+1 error
+, 8069, 856ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return true;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10004, pstmt-20033, rs-50026} closed
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10004, pstmt-20033} closed
+DEBUG http-nio-8089-exec-10 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10004, pstmt-20034} created. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10004, pstmt-20034} Parameters : [0]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10004, pstmt-20034} Types : [INTEGER]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10004, pstmt-20034} executed. 42.6154 millis. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} open
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Header: [question, floor, from, to, content]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Result: [0, 2, NorthBoat, 0, 测试一下啊]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Result: [0, 3, NorthBoat, 2, 哈哈哈]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Result: [0, 4, NorthBoat, 0, nmsl]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Result: [0, 5, NorthBoat, 4, wdnmd]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Result: [0, 6, NorthBoat, 4, 测一下]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Result: [0, 7, NorthBoat, 2, 再测一下]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Result: [0, 8, NorthBoat, 4, 这次应该好了]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Result: [0, 9, NorthBoat, 0, 怎么说]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Result: [0, 10, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Result: [0, 11, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} Result: [0, 12, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20034, rs-50027} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10004, pstmt-20034} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10004, pstmt-20035} created. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10004, pstmt-20035} Parameters : [0]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10004, pstmt-20035} Types : [INTEGER]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10004, pstmt-20035} executed. 46.005 millis. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20035, rs-50028} open
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20035, rs-50028} Header: [num, title, desc, memory_limit, time_limit, example_input, example_output, tips, customized]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20035, rs-50028} Result: [0, 翻转整数, 将整数翻转过来, 0, 4, 1234, 4321, 栈, 1]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20035, rs-50028} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10004, pstmt-20035} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG Druid-ConnectionPool-Create-1903954565 druid.sql.Connection - {conn-10001,procId-236} connected
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20000} created. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20000} Parameters : [1543625674@qq.com]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20000} Types : [VARCHAR]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20000} executed. 63.2951 millis. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} open
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} Header: [account, name, finished, simple_finished, middle_finished, hard_finished, finished_index, register_time, grade, skillful_lang, java_finished, c_finished, python_finished]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} Result: [1543625674@qq.com, NorthBoat, 1, 0, 0, 0, 1, 2022-04-05 06:05:05.0, null, Java, 1, 0, 0]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20000} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} created. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} Parameters : [1, 1, 0, 0, 1, Java, 1543625674@qq.com]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} Types : [INTEGER, INTEGER, INTEGER, INTEGER, VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} executed. 92.1803 millis. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} executed. 43.8371 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50001} open
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50001} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50001} Result: [1543625674@qq.com, 0, 编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 4: error: incompatible types: boolean cannot be converted to int
+            return true;
+                   ^
+1 error
+, 8069, 856ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return true;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50001} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20003} created. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20003} Parameters : [编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 4: error: incompatible types: boolean cannot be converted to int
+            return true;
+                   ^
+1 error
+, 3351, 888ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return true;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}, 1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20003} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20003} executed. 85.7974 millis. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20003} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20004} created. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20004} Parameters : [0]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20004} Types : [INTEGER]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20004} executed. 50.1473 millis. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} open
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Header: [question, floor, from, to, content]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Result: [0, 2, NorthBoat, 0, 测试一下啊]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Result: [0, 3, NorthBoat, 2, 哈哈哈]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Result: [0, 4, NorthBoat, 0, nmsl]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Result: [0, 5, NorthBoat, 4, wdnmd]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Result: [0, 6, NorthBoat, 4, 测一下]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Result: [0, 7, NorthBoat, 2, 再测一下]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Result: [0, 8, NorthBoat, 4, 这次应该好了]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Result: [0, 9, NorthBoat, 0, 怎么说]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Result: [0, 10, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Result: [0, 11, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} Result: [0, 12, NorthBoat, 4, 怎么肥四]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20004, rs-50002} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20004} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20005} created. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20005} Parameters : [1543625674@qq.com]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20005} Types : [VARCHAR]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20005} executed. 77.4786 millis. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10001, pstmt-20005, rs-50003} open
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10001, pstmt-20005, rs-50003} Header: [account, name, finished, simple_finished, middle_finished, hard_finished, finished_index, register_time, grade, skillful_lang, java_finished, c_finished, python_finished]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10001, pstmt-20005, rs-50003} Result: [1543625674@qq.com, NorthBoat, 1, 0, 0, 0, 1, 2022-04-05 06:05:05.0, null, Java, 1, 0, 0]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10001, pstmt-20005, rs-50003} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20005} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20006} created. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20006} Parameters : [1, 1, 0, 0, 1, Java, 1543625674@qq.com]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20006} Types : [INTEGER, INTEGER, INTEGER, INTEGER, VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20006} executed. 96.165999 millis. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10001, pstmt-20006} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20007} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20007} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20007} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20007} executed. 42.989 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10001, pstmt-20007, rs-50004} open
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10001, pstmt-20007, rs-50004} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10001, pstmt-20007, rs-50004} Result: [1543625674@qq.com, 0, 编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 4: error: incompatible types: boolean cannot be converted to int
+            return true;
+                   ^
+1 error
+, 3351, 888ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return true;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10001, pstmt-20007, rs-50004} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20007} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20008} created. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20008} Parameters : [解答错误 TAT, 通过样例:, 当前样例:, 正确答案:, 当前答案:, 1, 245, 542, 23, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 23;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}, 1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20008} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20008} executed. 85.714 millis. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10001, pstmt-20008} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG Druid-ConnectionPool-Create-391680633 druid.sql.Connection - {conn-10001,procId-237} connected
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20000} created. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20000} Parameters : [1543625674@qq.com]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20000} Types : [VARCHAR]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20000} executed. 68.6138 millis. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} open
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} Header: [account, name, finished, simple_finished, middle_finished, hard_finished, finished_index, register_time, grade, skillful_lang, java_finished, c_finished, python_finished]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} Result: [1543625674@qq.com, NorthBoat, 1, 0, 0, 0, 1, 2022-04-05 06:05:05.0, null, Java, 1, 0, 0]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20000} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} created. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} Parameters : [1, 1, 0, 0, 1, Java, 1543625674@qq.com]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} Types : [INTEGER, INTEGER, INTEGER, INTEGER, VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} executed. 89.3716 millis. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} executed. 48.0104 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50001} open
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50001} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50001} Result: [1543625674@qq.com, 0, 解答错误 TAT, 通过样例:, 当前样例:, 正确答案:, 当前答案:, 1, 245, 542, 23, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 23;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50001} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20003} created. select * from `question` where num=?
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20003} Parameters : [0]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20003} Types : [INTEGER]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20003} executed. 40.5243 millis. select * from `question` where num=?
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20003, rs-50002} open
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20003, rs-50002} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20003, rs-50002} Result: [0, 翻转整数, 易, 0, 7, reverseNum, Stack&Queue, int reverseNum(int num)]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20003, rs-50002} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20003} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20004} created. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20004} Parameters : [解答错误 TAT, 通过样例:, 当前样例:, 正确答案:, 当前答案:, 1, 245, 542, 23, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 23;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}, 1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20004} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20004} executed. 83.8783 millis. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20004} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG Druid-ConnectionPool-Create-391680633 druid.sql.Connection - {conn-10002,procId-238} connected
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20005} created. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20005} Parameters : [1543625674@qq.com]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20005} Types : [VARCHAR]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20005} executed. 82.5142 millis. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20005, rs-50003} open
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20005, rs-50003} Header: [account, name, finished, simple_finished, middle_finished, hard_finished, finished_index, register_time, grade, skillful_lang, java_finished, c_finished, python_finished]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20005, rs-50003} Result: [1543625674@qq.com, NorthBoat, 1, 0, 0, 0, 1, 2022-04-05 06:05:05.0, null, Java, 1, 0, 0]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20005, rs-50003} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20005} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20006} created. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20006} Parameters : [1, 1, 0, 0, 1, Java, 1543625674@qq.com]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20006} Types : [INTEGER, INTEGER, INTEGER, INTEGER, VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20006} executed. 88.0254 millis. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20006} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20007} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20007} Parameters : [1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20007} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-6 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20008} created. select * from `question` where num=?
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20008} Parameters : [0]
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20008} Types : [INTEGER]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20007} executed. 41.9704 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10002, pstmt-20007, rs-50004} open
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10002, pstmt-20007, rs-50004} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10002, pstmt-20007, rs-50004} Result: [1543625674@qq.com, 0, 解答错误 TAT, 通过样例:, 当前样例:, 正确答案:, 当前答案:, 1, 245, 542, 23, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 23;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10002, pstmt-20007, rs-50004} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20007} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20009} created. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20009} Parameters : [编译失败 QAQ, 通过样例:, 错误信息:, 容器创建时间:, 容器销毁时间:, 0, 5: error: missing return statement
+	}
+	^
+1 error
+, 8120, 875ms, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public int reverseNum(int num){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}, 1543625674@qq.com, 0]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20009} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20008} executed. 39.6224 millis. select * from `question` where num=?
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20008, rs-50005} open
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20008, rs-50005} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20008, rs-50005} Result: [0, 翻转整数, 易, 0, 7, reverseNum, Stack&Queue, int reverseNum(int num)]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20008, rs-50005} closed
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20008} closed
+DEBUG http-nio-8089-exec-6 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20009} executed. 85.4299 millis. update `result` set `title`=?, `key1`=?, `key2`=?, `key3`=?, `key4`=?, `val1`=?, `val2`=?, `val3`=?, `val4`=?, `code`=? where `account`=? and `num`=?
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20009} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG Druid-ConnectionPool-Create-1584802490 druid.sql.Connection - {conn-10001,procId-240} connected
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20000} created. select * from `news` where `version`=?
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20000} Parameters : [1]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20000} executed. 54.3114 millis. select * from `news` where `version`=?
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} open
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} Header: [version, user_num, visit_num, news_one, news_two, news_three, news_four, java_using, c_using, python_using]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} Result: [1, 2, 20, 1, 2, 3, 4, 6, 0, 0]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10001, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10001, pstmt-20000} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} created. select * from `question`
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} Parameters : []
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} Types : []
+DEBUG Druid-ConnectionPool-Create-1584802490 druid.sql.Connection - {conn-10002,procId-241} connected
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} executed. 42.93 millis. select * from `question`
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20001, rs-50001} open
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20001, rs-50001} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20001, rs-50001} Result: [0, 翻转整数, 易, 0, 21, reverseNum, Stack&Queue, int reverseNum(int num)]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20001, rs-50001} Result: [1, 有效的括号, 易, 0, 17, validBrackets, Stack&Queue, boolean validBrackets(String brackets)]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10001, pstmt-20001, rs-50001} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10001, pstmt-20001} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} created. select * from `info`
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} Parameters : []
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} Types : []
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} executed. 41.3489 millis. select * from `info`
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50002} open
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50002} Header: [account, name, finished, simple_finished, middle_finished, hard_finished, finished_index, register_time, grade, skillful_lang, java_finished, c_finished, python_finished]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50002} Result: [1543625674@qq.com, NorthBoat, 1, 0, 0, 0, 1, 2022-04-05 06:05:05.0, null, Java, 1, 0, 0]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50002} Result: [northboat@163.com, 啊哈, 0, 0, 0, 0, 0, 2022-04-06 03:28:32.0, null, null, 0, 0, 0]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10001, pstmt-20002, rs-50002} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10001, pstmt-20002} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20003} created. select * from `question`
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20003} Parameters : []
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20003} Types : []
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20003} executed. 42.7732 millis. select * from `question`
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20003, rs-50003} open
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20003, rs-50003} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20003, rs-50003} Result: [0, 翻转整数, 易, 0, 21, reverseNum, Stack&Queue, int reverseNum(int num)]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20003, rs-50003} Result: [1, 有效的括号, 易, 0, 17, validBrackets, Stack&Queue, boolean validBrackets(String brackets)]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10002, pstmt-20003, rs-50003} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10002, pstmt-20003} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10002} pool-connect
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20004} created. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20004} Parameters : [1]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20004} Types : [INTEGER]
+DEBUG http-nio-8089-exec-6 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20005} created. select * from `question` where num=?
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20005} Parameters : [1]
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20005} Types : [INTEGER]
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20004} executed. 42.3769 millis. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10002, pstmt-20004, rs-50004} open
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10002, pstmt-20004, rs-50004} Header: [num, title, desc, memory_limit, time_limit, example_input, example_output, tips, customized]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10002, pstmt-20004, rs-50004} Result: [1, 有效的括号, 判断一个由()、{}、[]组成的字符串是否为有效的括号，有效的规则为，左括号必须用相同类型的右括号闭合，左括号必须以正确的顺序闭合, 0, 4, (){}[], true, 栈, 0]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10002, pstmt-20004, rs-50004} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10002, pstmt-20004} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10002} pool-recycle
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20005} executed. 44.4052 millis. select * from `question` where num=?
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20005, rs-50005} open
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20005, rs-50005} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20005, rs-50005} Result: [1, 有效的括号, 易, 0, 17, validBrackets, Stack&Queue, boolean validBrackets(String brackets)]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10001, pstmt-20005, rs-50005} closed
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10001, pstmt-20005} closed
+DEBUG http-nio-8089-exec-6 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10001, pstmt-20006} created. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10001, pstmt-20006} Parameters : [1543625674@qq.com]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10001, pstmt-20006} Types : [VARCHAR]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10001, pstmt-20006} executed. 98.9247 millis. select * from `info` where `account`=?
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10001, pstmt-20006, rs-50006} open
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10001, pstmt-20006, rs-50006} Header: [account, name, finished, simple_finished, middle_finished, hard_finished, finished_index, register_time, grade, skillful_lang, java_finished, c_finished, python_finished]
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10001, pstmt-20006, rs-50006} Result: [1543625674@qq.com, NorthBoat, 1, 0, 0, 0, 1, 2022-04-05 06:05:05.0, null, Java, 1, 0, 0]
+DEBUG http-nio-8089-exec-7 druid.sql.ResultSet - {conn-10001, pstmt-20006, rs-50006} closed
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10001, pstmt-20006} closed
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10001, pstmt-20007} created. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10001, pstmt-20007} Parameters : [1, 1, 0, 0, 1, Java, 1543625674@qq.com]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10001, pstmt-20007} Types : [INTEGER, INTEGER, INTEGER, INTEGER, VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10001, pstmt-20007} executed. 89.6537 millis. update `info` set finished=?, java_finished=?, c_finished=?, python_finished=?, finished_index=?, skillful_lang=? where `account`=?
+DEBUG http-nio-8089-exec-7 druid.sql.Statement - {conn-10001, pstmt-20007} closed
+DEBUG http-nio-8089-exec-7 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10001, pstmt-20008} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10001, pstmt-20008} Parameters : [1543625674@qq.com, 1]
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10001, pstmt-20008} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10001, pstmt-20008} executed. 43.3635 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10001, pstmt-20008, rs-50007} open
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10001, pstmt-20008, rs-50007} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-8 druid.sql.ResultSet - {conn-10001, pstmt-20008, rs-50007} closed
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10001, pstmt-20008} closed
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10001} pool-connect
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10001, pstmt-20009} created. insert into `result`(`account`, `num`, `title`, `key1`, `key2`, `key3`, `key4`, `val1`, `val2`, `val3`, `val4`, `code`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10001, pstmt-20009} Parameters : [1543625674@qq.com, 1, 解答错误 TAT, 通过样例:, 当前样例:, 正确答案:, 当前答案:, 1, ()), false, true, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public boolean validBrackets(String brackets){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return true;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10001, pstmt-20009} Types : [VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10001, pstmt-20009} executed. 83.7906 millis. insert into `result`(`account`, `num`, `title`, `key1`, `key2`, `key3`, `key4`, `val1`, `val2`, `val3`, `val4`, `code`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+DEBUG http-nio-8089-exec-8 druid.sql.Statement - {conn-10001, pstmt-20009} closed
+DEBUG http-nio-8089-exec-8 druid.sql.Connection - {conn-10001} pool-recycle
+DEBUG http-nio-8089-exec-9 druid.sql.Connection - {conn-10001} closed
+DEBUG http-nio-8089-exec-9 druid.sql.Connection - {conn-10002} closed
+DEBUG Druid-ConnectionPool-Create-1584802490 druid.sql.Connection - {conn-10003,procId-242} connected
+DEBUG http-nio-8089-exec-9 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10003, pstmt-20010} created. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10003, pstmt-20010} Parameters : [1]
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10003, pstmt-20010} Types : [INTEGER]
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10003, pstmt-20010} executed. 39.6806 millis. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20010, rs-50008} open
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20010, rs-50008} Header: [question, floor, from, to, content]
+DEBUG http-nio-8089-exec-9 druid.sql.ResultSet - {conn-10003, pstmt-20010, rs-50008} closed
+DEBUG http-nio-8089-exec-9 druid.sql.Statement - {conn-10003, pstmt-20010} closed
+DEBUG http-nio-8089-exec-9 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG http-nio-8089-exec-10 druid.sql.Connection - {conn-10003} pool-connect
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10003, pstmt-20011} created. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10003, pstmt-20011} Parameters : [1543625674@qq.com, 1]
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10003, pstmt-20011} Types : [VARCHAR, INTEGER]
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10003, pstmt-20011} executed. 39.4363 millis. select * from `result` where `account` = ? and `num` = ?
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10003, pstmt-20011, rs-50009} open
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10003, pstmt-20011, rs-50009} Header: [account, num, title, key1, key2, key3, key4, val1, val2, val3, val4, code]
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10003, pstmt-20011, rs-50009} Result: [1543625674@qq.com, 1, 解答错误 TAT, 通过样例:, 当前样例:, 正确答案:, 当前答案:, 1, ()), false, true, class Solution{<br>&nbsp;&nbsp;&nbsp;&nbsp;public boolean validBrackets(String brackets){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return true;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}]
+DEBUG http-nio-8089-exec-10 druid.sql.ResultSet - {conn-10003, pstmt-20011, rs-50009} closed
+DEBUG http-nio-8089-exec-10 druid.sql.Statement - {conn-10003, pstmt-20011} closed
+DEBUG http-nio-8089-exec-10 druid.sql.Connection - {conn-10003} pool-recycle
+DEBUG Druid-ConnectionPool-Create-1584802490 druid.sql.Connection - {conn-10004,procId-243} connected
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10004, pstmt-20012} created. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10004, pstmt-20012} Parameters : [1]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10004, pstmt-20012} Types : [INTEGER]
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10004, pstmt-20012} executed. 44.757 millis. select * from `comment` where `question`=?
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10004, pstmt-20012, rs-50010} open
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10004, pstmt-20012, rs-50010} Header: [question, floor, from, to, content]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10004, pstmt-20012, rs-50010} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10004, pstmt-20012} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10004, pstmt-20013} created. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10004, pstmt-20013} Parameters : [1]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10004, pstmt-20013} Types : [INTEGER]
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10004, pstmt-20013} executed. 40.413 millis. select * from `detail` where `num`=?
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20013, rs-50011} open
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20013, rs-50011} Header: [num, title, desc, memory_limit, time_limit, example_input, example_output, tips, customized]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20013, rs-50011} Result: [1, 有效的括号, 判断一个由()、{}、[]组成的字符串是否为有效的括号，有效的规则为，左括号必须用相同类型的右括号闭合，左括号必须以正确的顺序闭合, 0, 4, (){}[], true, 栈, 0]
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10004, pstmt-20013, rs-50011} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10004, pstmt-20013} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10004, pstmt-20014} created. select * from `question`
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10004, pstmt-20014} Parameters : []
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10004, pstmt-20014} Types : []
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10004, pstmt-20014} executed. 40.1395 millis. select * from `question`
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20014, rs-50012} open
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20014, rs-50012} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20014, rs-50012} Result: [0, 翻转整数, 易, 0, 21, reverseNum, Stack&Queue, int reverseNum(int num)]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20014, rs-50012} Result: [1, 有效的括号, 易, 0, 17, validBrackets, Stack&Queue, boolean validBrackets(String brackets)]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10004, pstmt-20014, rs-50012} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10004, pstmt-20014} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10004} pool-recycle
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10004} pool-connect
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10004, pstmt-20015} created. select * from `question` where tag=?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10004, pstmt-20015} Parameters : [Stack&Queue]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10004, pstmt-20015} Types : [VARCHAR]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10004, pstmt-20015} executed. 41.4171 millis. select * from `question` where tag=?
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10004, pstmt-20015, rs-50013} open

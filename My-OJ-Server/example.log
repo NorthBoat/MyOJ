@@ -1,0 +1,78 @@
+DEBUG http-nio-8089-exec-1 druid.sql.ResultSet - {conn-10031, pstmt-20141, rs-50128} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Statement - {conn-10031, pstmt-20141} closed
+DEBUG http-nio-8089-exec-1 druid.sql.Connection - {conn-10031} pool-recycle
+DEBUG http-nio-8089-exec-6 druid.sql.Connection - {conn-10031} pool-connect
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10031, pstmt-20142} created. select * from `news` where `version`=?
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10031, pstmt-20142} Parameters : [1]
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10031, pstmt-20142} Types : [INTEGER]
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10031, pstmt-20142} executed. 41.9716 millis. select * from `news` where `version`=?
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10031, pstmt-20142, rs-50129} open
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10031, pstmt-20142, rs-50129} Header: [version, user_num, visit_num, news_one, news_two, news_three, news_four, java_using, c_using, python_using]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10031, pstmt-20142, rs-50129} Result: [1, 3, 24, 1, 2, 3, 4, 6, 0, 0]
+DEBUG http-nio-8089-exec-6 druid.sql.ResultSet - {conn-10031, pstmt-20142, rs-50129} closed
+DEBUG http-nio-8089-exec-6 druid.sql.Statement - {conn-10031, pstmt-20142} closed
+DEBUG http-nio-8089-exec-6 druid.sql.Connection - {conn-10031} pool-recycle
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10031} pool-connect
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10030} pool-connect
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10030, pstmt-20144} created. select * from `info`
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10031, pstmt-20143} created. select * from `question`
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10030, pstmt-20144} Parameters : []
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10030, pstmt-20144} Types : []
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10031, pstmt-20143} Parameters : []
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10031, pstmt-20143} Types : []
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10030, pstmt-20144} executed. 45.7535 millis. select * from `info`
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10030, pstmt-20144, rs-50130} open
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10031, pstmt-20143} executed. 48.1592 millis. select * from `question`
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10030, pstmt-20144, rs-50130} Header: [account, name, finished, simple_finished, middle_finished, hard_finished, finished_index, register_time, grade, skillful_lang, java_finished, c_finished, python_finished]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} open
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10030, pstmt-20144, rs-50130} Result: [1543625674@qq.com, NorthBoat, 5, 0, 0, 0, 101000111, 2022-04-05 06:05:05.0, null, Java, 5, 0, 0]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} Result: [0, 翻转整数, 易, 0, 21, reverseNum, Stack&Queue, int reverseNum(int num)]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} Result: [1, 有效的括号, 易, 0, 17, validBrackets, Stack&Queue, boolean validBrackets(String brackets)]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} Result: [2, 简化路径, 中, 0, 12, simplifyPath, Stack&Queue, String simplifyPath(String path)]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} Result: [3, 链表的头插法, 易, 0, 21, insertByHead, List, Node insertByHead(int[] nums)]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} Result: [4, 链表的尾插法, 易, 0, 21, insertByTail, List, Node insertByTail(int[] nums)]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} Result: [5, 删除链表的倒数第N个节点, 中, 0, 21, removeNthFromEnd, List, Node removeNthFromEnd(Node head, int n)]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} Result: [6, 最长的公共前缀, 易, 0, 17, longestCommonPrefix, String&Arr, String longestCommonPrefix(String[] strs)]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} Result: [7, 字符串转整数, 中, 0, 21, strToNum, String&Arr, int strToNum(String str)]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} Result: [8, 第三大的数, 易, 0, 21, thirdMax, String&Arr, int thirdMax(int[] nums)]
+DEBUG http-nio-8089-exec-3 druid.sql.ResultSet - {conn-10031, pstmt-20143, rs-50131} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Statement - {conn-10031, pstmt-20143} closed
+DEBUG http-nio-8089-exec-3 druid.sql.Connection - {conn-10031} pool-recycle
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10030, pstmt-20144, rs-50130} Result: [northboat@163.com, 啊哈, 0, 0, 0, 0, 0, 2022-04-06 03:28:32.0, null, null, 0, 0, 0]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10030, pstmt-20144, rs-50130} Result: [xurongxin@foxmail.com, op, 0, 0, 0, 0, 0, 2022-04-13 01:31:55.0, null, null, 0, 0, 0]
+DEBUG http-nio-8089-exec-2 druid.sql.ResultSet - {conn-10030, pstmt-20144, rs-50130} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Statement - {conn-10030, pstmt-20144} closed
+DEBUG http-nio-8089-exec-2 druid.sql.Connection - {conn-10030} pool-recycle
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10030} pool-connect
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10030, pstmt-20145} created. select * from `question` where tag=?
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10030, pstmt-20145} Parameters : [List]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10030, pstmt-20145} Types : [VARCHAR]
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10030, pstmt-20145} executed. 43.4235 millis. select * from `question` where tag=?
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10030, pstmt-20145, rs-50132} open
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10030, pstmt-20145, rs-50132} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10030, pstmt-20145, rs-50132} Result: [3, 链表的头插法, 易, 0, 21, insertByHead, List, Node insertByHead(int[] nums)]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10030, pstmt-20145, rs-50132} Result: [4, 链表的尾插法, 易, 0, 21, insertByTail, List, Node insertByTail(int[] nums)]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10030, pstmt-20145, rs-50132} Result: [5, 删除链表的倒数第N个节点, 中, 0, 21, removeNthFromEnd, List, Node removeNthFromEnd(Node head, int n)]
+DEBUG http-nio-8089-exec-4 druid.sql.ResultSet - {conn-10030, pstmt-20145, rs-50132} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Statement - {conn-10030, pstmt-20145} closed
+DEBUG http-nio-8089-exec-4 druid.sql.Connection - {conn-10030} pool-recycle
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10030} pool-connect
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10030, pstmt-20146} created. select * from `question`
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10030, pstmt-20146} Parameters : []
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10030, pstmt-20146} Types : []
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10030, pstmt-20146} executed. 43.3241 millis. select * from `question`
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} open
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} Header: [num, title, level, thumb, example, name, tag, func]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} Result: [0, 翻转整数, 易, 0, 21, reverseNum, Stack&Queue, int reverseNum(int num)]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} Result: [1, 有效的括号, 易, 0, 17, validBrackets, Stack&Queue, boolean validBrackets(String brackets)]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} Result: [2, 简化路径, 中, 0, 12, simplifyPath, Stack&Queue, String simplifyPath(String path)]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} Result: [3, 链表的头插法, 易, 0, 21, insertByHead, List, Node insertByHead(int[] nums)]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} Result: [4, 链表的尾插法, 易, 0, 21, insertByTail, List, Node insertByTail(int[] nums)]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} Result: [5, 删除链表的倒数第N个节点, 中, 0, 21, removeNthFromEnd, List, Node removeNthFromEnd(Node head, int n)]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} Result: [6, 最长的公共前缀, 易, 0, 17, longestCommonPrefix, String&Arr, String longestCommonPrefix(String[] strs)]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} Result: [7, 字符串转整数, 中, 0, 21, strToNum, String&Arr, int strToNum(String str)]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} Result: [8, 第三大的数, 易, 0, 21, thirdMax, String&Arr, int thirdMax(int[] nums)]
+DEBUG http-nio-8089-exec-5 druid.sql.ResultSet - {conn-10030, pstmt-20146, rs-50133} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Statement - {conn-10030, pstmt-20146} closed
+DEBUG http-nio-8089-exec-5 druid.sql.Connection - {conn-10030} pool-recycle
