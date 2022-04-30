@@ -169,7 +169,11 @@ export default {
           }
           this.judging = true;
           this.button_status = '正在判题';
-          let info = {num: this.question.num, answer: this.answer, username: window.sessionStorage.getItem("loginAccount"), name: this.question.name, lang: this.lang, memoryLimit: this.memory_limit};
+          let info = {num: this.question.num, answer: this.answer, 
+                      username: window.sessionStorage.getItem("loginAccount"), 
+                      level: this.question.level,
+                      name: this.question.name, lang: this.lang,
+                      memoryLimit: this.memory_limit};
           this.$axios.post("/judge", info).then(response=>{
               this.judging = false;
               this.button_status = '提交';

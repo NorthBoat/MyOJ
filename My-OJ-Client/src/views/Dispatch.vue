@@ -46,6 +46,11 @@ export default {
             this.$router.push({name: 'board'});
             return;
         }
+        //个人页面删除后跳转
+        else if(this.$route.params.delete != undefined){
+            this.$router.push({name: 'profile'});
+            return;
+        }
         this.$router.push({name: 'hello'});
     },
 

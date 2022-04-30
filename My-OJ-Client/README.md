@@ -1,21 +1,23 @@
-# neuq-oj-client
+# 前端工程文件
 
-> A Vue.js project
+Vue+ElementUI开发完成
 
-## Build Setup
+需要搭配nodejs环境进行本地部署
 
-``` bash
-# install dependencies
+该项目已部署在`39.106.160.174:8087`，可直接进行访问
+
+## 1、下载依赖
+
+~~~bash
 npm install
+~~~
 
-# serve with hot reload at localhost:8080
+## 2、本地运行
+
+~~~bash
 npm run dev
+~~~
 
-# build for production with minification
-npm run build
+## 3、测试
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+访问`localhost:8087`即可

@@ -21,8 +21,9 @@
     </el-form>
 
     <div id="tips">
-      <p>New to OJ? <router-link type="primary" to="/register">Create an account</router-link></p>
-      <p><router-link type="primary" to="/find">Maybe you forget password ?</router-link></p>
+      <p>New to OJ? <router-link type="primary" :to="{name: 'register'}">Create an account</router-link></p>
+      <p><router-link type="primary" :to="{name: 'change'}">Maybe you forget password ?</router-link></p>
+      <p><router-link type="primary" :to="{name: 'dispatch'}">Go back</router-link></p>
       
     </div>
     

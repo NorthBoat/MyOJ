@@ -21,9 +21,12 @@ public interface InfoMapper {
     @Select("select * from `info`")
     List<Info> getAllInfo();
 
-    @Update("update `info` set finished=#{finished}, java_finished=#{java_finished}, c_finished=#{c_finished}, python_finished=#{python_finished}, finished_index=#{finished_index}, skillful_lang=#{skillful_lang} where `account`=#{account}")
+    @Update("update `info` set finished=#{finished}, java_finished=#{java_finished}, c_finished=#{c_finished}, python_finished=#{python_finished}, finished_index=#{finished_index}, skillful_lang=#{skillful_lang}, simple_finished=#{simple_finished}, middle_finished=#{middle_finished}, hard_finished=#{hard_finished} where `account`=#{account}")
     void updateInfo(Info info);
 
     @Select("select * from `info` where `account`=#{account}")
     Info getInfo(String account);
+
+    @Select("select * from info where name=#{name}")
+    Info getInfoByName(String name);
 }

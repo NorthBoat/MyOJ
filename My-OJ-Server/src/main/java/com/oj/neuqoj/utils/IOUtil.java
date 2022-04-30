@@ -16,7 +16,7 @@ public class IOUtil {
         //绝对路径：C:\Files\java\javaee\my-oj\Code-Src\
         //服务器路径：/java/oj/
         try {
-            out = new FileOutputStream("/java/oj/" + name + "/" + username + ".java");
+            out = new FileOutputStream("C:\\Files\\java\\javaee\\my-oj\\Code-Src\\" + name + "/" + username + ".java");
             byte[] b = answer.getBytes();
             out.write(b);
             out.close();
@@ -26,5 +26,9 @@ public class IOUtil {
             return false;
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+        Integer.parseInt("nmsl");
     }
 }

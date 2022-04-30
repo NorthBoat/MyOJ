@@ -3,6 +3,7 @@ com\oj\neuqoj\api\ProblemApi.class
 com\oj\neuqoj\mapper\ProblemMapper.class
 com\oj\neuqoj\service\DockerService.class
 com\oj\neuqoj\utils\IOUtil.class
+com\oj\neuqoj\config\RedisConfig.class
 com\oj\neuqoj\utils\DateUtil.class
 com\oj\neuqoj\api\UserApi.class
 com\oj\neuqoj\pojo\Painting.class
@@ -31,6 +32,7 @@ com\oj\neuqoj\utils\MailUtil$1.class
 com\oj\neuqoj\mapper\ReplyMapper.class
 com\oj\neuqoj\pojo\Topic.class
 com\oj\neuqoj\mapper\NewsMapper.class
+com\oj\neuqoj\utils\RedisUtil.class
 com\oj\neuqoj\api\PaintingApi.class
 com\oj\neuqoj\mapper\CommentMapper.class
 com\oj\neuqoj\mapper\PaintingMapper.class

@@ -4,10 +4,12 @@ import Router from 'vue-router'
 import Main from '../views/Main'
 import Lost from '../views/Lost'
 import Dispatch from '../views/Dispatch'
+import Log from '../views/Log'
 
 import Login from '../views/login/Login'
 import Register from '../views/login/Register'
 import Improve from '../views/login/Improve'
+import Change from '../views/login/Change'
 
 import Hello from '../views/content/Hello'
 import Profile from '../views/content/Profile'
@@ -33,21 +35,16 @@ export default new Router({
   //mode: 'history',
   routes: [
     {
-      path: '/login',
-      component: Login,
-      name: 'login'
-    },
-
-    {
-      path: '/register',
-      component: Register,
-      name: 'register'
-    },
-
-    {
-      path: '/improve',
-      component: Improve,
-      name: 'improve'
+      path: '/log',
+      redirect: '/log/login',
+      component: Log,
+      name: 'log',
+      children:[
+        {path: '/log/login', component: Login, name: 'login'},
+        {path: '/log/register', component: Register, name: 'register'},
+        {path: '/log/improve', component: Improve, name: 'improve'},
+        {path: '/log/change', component: Change, name: 'change'},
+      ]
     },
 
     {

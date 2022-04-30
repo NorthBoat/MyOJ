@@ -154,12 +154,14 @@
 							<div class="dropdown-menu dropdown-menu-right">
 
 								<!-- 这里要改 -->
+								<router-link class="dropdown-item" :to="{name: 'profile'}">Profile</router-link>
+								<router-link class="dropdown-item" :to="{name: 'dispatch', params: {repoTag: 'All'}}">Repository</router-link>
 
-								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle mr-1" data-feather="user"></i> Profile</a>
-								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i> Analytics</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="pages-settings.html"><i class="align-middle mr-1" data-feather="settings"></i> Settings & Privacy</a>
-								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="help-circle"></i> Help Center</a>
+
+								<router-link class="dropdown-item" :to="{name: 'board'}">Painting</router-link>
+								<router-link class="dropdown-item" :to="{name: 'write'}">Write something</router-link>
+
 								<div class="dropdown-divider"></div>
 
 								<el-button class="dropdown-item" @click="logout()">Log out</el-button>
@@ -167,7 +169,7 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav navbar-align" v-else>
-						<li><router-link to="/login"><el-button type="primary" plain>登录</el-button></router-link></li>
+						<li><router-link :to="{name: 'login'}"><el-button type="primary" plain>登录</el-button></router-link></li>
 					</ul>
 				</div>
 			</nav>

@@ -102,4 +102,17 @@ public class TopicApi {
         return ResultUtil.success();
     }
 
+    @RequestMapping("/getTopicsByName")
+    public ResultUtil getTopicsByName(@RequestBody Map<String, String> params){
+        String name = params.get("name");
+        List<Topic> topics = topicMapper.getTopicsByName(name);
+        return ResultUtil.success(topics);
+    }
+
+    @RequestMapping("/deleteTopic")
+    public ResultUtil deleteTopic(@RequestBody Map<String, String> params){
+        int num = Integer.parseInt(params.get("num"));
+        topicMapper.deleteTopic(num);
+        return ResultUtil.success();
+    }
 }

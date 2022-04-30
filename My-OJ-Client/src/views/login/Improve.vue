@@ -26,7 +26,7 @@
     </el-form>
 
     <div id="tips">
-      <p>Wrong email? <router-link type="primary" to="/register" @click="clearSession">refill the address</router-link></p>    
+      <p>Wrong email? <router-link type="primary" :to="{name: 'register'}" @click="clearSession">refill the address</router-link></p>    
     </div>
     </div>
 </template>

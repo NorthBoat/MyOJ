@@ -47,7 +47,7 @@ public class Info {
         return this.finished_index.charAt(index) == '1';
     }
 
-    public void pass(int index, int lang){
+    public void pass(int index, int lang, String level){
         StringBuilder stringBuilder = new StringBuilder(this.finished_index);
         if(index >= this.finished_index.length()){
             int n = this.finished_index.length();
@@ -60,6 +60,13 @@ public class Info {
             case 21100: this.java_finished += 1; break;
             case 10730: this.c_finished += 1; break;
             case 30114: this.python_finished += 1; break;
+        }
+        if(level.equals("易")){
+            this.simple_finished++;
+        }else if(level.equals("中")){
+            this.middle_finished++;
+        }else{
+            this.hard_finished++;
         }
         this.finished += 1;
         this.finished_index = stringBuilder.replace(index, index+1, "1").toString();

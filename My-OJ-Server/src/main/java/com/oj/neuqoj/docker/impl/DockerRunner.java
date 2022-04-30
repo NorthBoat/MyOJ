@@ -24,7 +24,7 @@ public class DockerRunner implements Runner, Callable<Map<String, Object>> {
     private DockerClient docker;
     // private List<Image> Images;
 
-    private static final int coreContainerSize = 7;
+    private static final int coreContainerSize = 9;
     private static final int maximumContainerSize = 12;
     //请求队列，当容器不够时给爷排队
     private static Deque<JudgeRequest> requestQueue;
@@ -76,16 +76,18 @@ public class DockerRunner implements Runner, Callable<Map<String, Object>> {
         while(true){
             if(pollingCount%3 == 0){
                 try{
+                    //System.out.println("hahaha");
                     docker = DefaultDockerClient.builder()
                             //证书连接
                             .uri(URI.create("https://39.106.160.174:2375"))
                             //服务器路径：/java/certs
-                            //windows路径：C:\Files\java\javaee\my-oj\My-OJ-Server\src\main\resources\dockercerts
-                            .dockerCertificates(new DockerCertificates(Paths.get("/java/certs")))
+                            //windows路径：C:\Files\java\javaee\my-oj\Certs
+                            .dockerCertificates(new DockerCertificates(Paths.get("C:\\Files\\java\\javaee\\my-oj\\Certs")))
                             .build();
                     creation = docker.createContainer(containerConfig);
                     break;
                 }catch (Exception e){
+                    e.printStackTrace();
                     pollingCount++;
                     if(++count >= 3){ throw new RuntimeException("Docker连接失败"); }
                 }
@@ -141,6 +143,7 @@ public class DockerRunner implements Runner, Callable<Map<String, Object>> {
         long start = System.currentTimeMillis();
         System.out.println("开始初始化docker");
         String id = null;
+        int size = maximumContainerSize;
         String imageType = imageMap.get(type);
         try{
 
@@ -210,7 +213,8 @@ public class DockerRunner implements Runner, Callable<Map<String, Object>> {
         return judge();
     }
 
-    public Map<String, Object> judge() throws InterruptedException, IOException, DockerException{
+    public Map<String, Object> judge() throws  InterruptedException,
+                                IOException, DockerException, java.lang.NumberFormatException{
         JudgeRequest request = poll();
 
         Map<String, Object> res = new HashMap<>();
@@ -228,7 +232,8 @@ public class DockerRunner implements Runner, Callable<Map<String, Object>> {
         //将本地文件夹共享至容器内部
         docker.copyToContainer(new File
                 //服务器路径：/java/oj/
-                ("/java/oj/" + request.getName()).toPath(), id, "/usr/codeRun/");
+                //本地路径: C:\Files\java\javaee\my-oj\Code-Src\
+                ("C:\\Files\\java\\javaee\\my-oj\\Code-Src\\" + request.getName()).toPath(), id, "/usr/codeRun/");
 
 
         //开始在容器内部执行命令执行
@@ -285,6 +290,7 @@ public class DockerRunner implements Runner, Callable<Map<String, Object>> {
         //从打印信息execOutput种获取结果
         //System.out.println(execOutput);
         String[] info = execOutput.split("\n");
+        //System.out.println(info[0]);
         int status = Integer.parseInt(info[0].trim());
         //System.out.println(status);
 
@@ -306,6 +312,7 @@ public class DockerRunner implements Runner, Callable<Map<String, Object>> {
             res.put("destroyTime", kill(id) + "ms");
             return res;
         } else {
+            //System.out.println("hahaha");
             res.put("passNum", info[1]);
             res.put("averageTime", info[2]);
         }
@@ -323,7 +330,7 @@ public class DockerRunner implements Runner, Callable<Map<String, Object>> {
         /*if(mem.length()!=0){
             memory = mem.substring(mem.indexOf(":"), mem.indexOf("/"));
         }*/
-
+        //System.out.println("hahaha");
 
         //超出内存限制
         if(Integer.parseInt(memory.substring(0, memory.indexOf("M"))) > request.getMemoryLimit()){

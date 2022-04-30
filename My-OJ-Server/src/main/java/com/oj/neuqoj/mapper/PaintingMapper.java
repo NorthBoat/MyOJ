@@ -1,6 +1,7 @@
 package com.oj.neuqoj.mapper;
 
 import com.oj.neuqoj.pojo.Painting;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -23,5 +24,11 @@ public interface PaintingMapper {
 
     @Insert("insert into `painting`(`title`, `desc`, `from`, `content`) values(#{title}, #{desc}, #{from}, #{content})")
     void addPainting(Painting painting);
+
+    @Select("select * from `painting` where `from`=#{name}")
+    List<Painting> getPaintingsByName(String name);
+
+    @Delete("delete from `painting` where `num`=#{num}")
+    void deletePainting(int num);
 
 }

@@ -25,7 +25,7 @@
     </el-form>
 
     <div id="tips">
-      <p>Already have an account? <router-link type="primary" to="/login">Sign in</router-link></p>    
+      <p>Already have an account? <router-link type="primary" :to="{name: 'login'}">Sign in</router-link></p>    
     </div>
     
     </div>
@@ -76,7 +76,7 @@ export default {
                   });
               } else{
                   this.$message({
-                      message: result.data,
+                      message: '邮件已发送, 请注意查收, 有效期10分钟',
                       type: 'success'
                   });
                   window.sessionStorage.setItem("registerEmail", e);

@@ -24,6 +24,8 @@ public class MyMvcConfig implements WebMvcConfigurer {
                         "/userList", "/register", "/getRepo", "/getQuestion", "/getDetail", "/judge",
                         "/storeRes", "/getRes", "/getNews", "/getQuesNews", "/getTopUser", "/getTopic",
                         "/getTopics", "/getReply", "/reply", "/getComments", "/comment",
-                        "/getPaintings", "/submitPainting", "/getList", "/write");
+                        "/getPaintings", "/submitPainting", "/getList", "/write",
+                        "/getTopicsByName", "/getPaintingsByName", "/getInfoByName",
+                        "/deletePainting", "/deleteTopic", "/getCode", "/change");
     }
 }

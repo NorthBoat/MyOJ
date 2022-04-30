@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -42,6 +43,20 @@ public class PaintingApi {
             e.printStackTrace();
             return ResultUtil.failure(ResultCode.INTERNAL_SERVER_ERROR);
         }
+        return ResultUtil.success();
+    }
+
+    @RequestMapping("/getPaintingsByName")
+    public ResultUtil getPaintingsByName(@RequestBody Map<String, String> params){
+        String name = params.get("name");
+        List<Painting> paintings = paintingMapper.getPaintingsByName(name);
+        return ResultUtil.success(paintings);
+    }
+
+    @RequestMapping("/deletePainting")
+    public ResultUtil deletePainting(@RequestBody Map<String, String> params){
+        int num = Integer.parseInt(params.get("num"));
+        paintingMapper.deletePainting(num);
         return ResultUtil.success();
     }
 }

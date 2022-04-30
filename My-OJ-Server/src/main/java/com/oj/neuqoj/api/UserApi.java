@@ -5,11 +5,9 @@ import com.oj.neuqoj.mapper.NewsMapper;
 import com.oj.neuqoj.mapper.QuestionMapper;
 import com.oj.neuqoj.mapper.UserMapper;
 import com.oj.neuqoj.pojo.Info;
+import com.oj.neuqoj.pojo.Result;
 import com.oj.neuqoj.pojo.User;
-import com.oj.neuqoj.utils.DateUtil;
-import com.oj.neuqoj.utils.MailUtil;
-import com.oj.neuqoj.utils.ResultUtil;
-import com.oj.neuqoj.utils.ResultCode;
+import com.oj.neuqoj.utils.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,8 +17,6 @@ import java.util.*;
 @RestController
 @CrossOrigin
 public class UserApi {
-
-    private Map<String, String> registerCode = new HashMap<>();
 
     private UserMapper userMapper;
     @Autowired
@@ -44,6 +40,12 @@ public class UserApi {
     @Autowired
     public void setQuestionMapper(QuestionMapper questionMapper){
         this.questionMapper = questionMapper;
+    }
+
+    private RedisUtil redisUtil;
+    @Autowired
+    public void setRedisUtil(RedisUtil redisUtil){
+        this.redisUtil = redisUtil;
     }
 
 
@@ -80,13 +82,54 @@ public class UserApi {
             MailUtil mailUtil = new MailUtil(to);
             String code = mailUtil.ready();
             mailUtil.start();
-            registerCode.put(to, code);
+            //registerCode.put(to, code);
+            redisUtil.set(to, code, 600);
             System.out.println(to + ":" + code);
         } catch (MessagingException e) {
             System.out.println("发送邮件出错");
-            return ResultUtil.failure(ResultCode.INTERNAL_SERVER_ERROR, "服务器错误，请稍后重试");
+            return ResultUtil.failure(ResultCode.INTERNAL_SERVER_ERROR, "发送邮件出错");
         }
-        return ResultUtil.success("邮件发送成功，请注意查收");
+        return ResultUtil.success();
+    }
+
+    @RequestMapping("/getCode")
+    public ResultUtil getCode(@RequestBody Map<String, String> params){
+        String to = params.get("email");
+        User user = userMapper.getUserByAccount(to);
+        if(user == null){
+            return ResultUtil.failure(ResultCode.PARAM_IS_BLANK, "账号不存在，请先注册");
+        }
+        try {
+            MailUtil mailUtil = new MailUtil(to);
+            String code = mailUtil.ready();
+            mailUtil.start();
+
+            redisUtil.set(to, code, 600);//单位秒
+            //registerCode.put(to, code);
+            System.out.println(to + ":" + code);
+        } catch (MessagingException e) {
+            System.out.println("发送邮件出错");
+            return ResultUtil.failure(ResultCode.INTERNAL_SERVER_ERROR, "发送邮件出错");
+        }
+
+        //System.out.println(redisUtil.get(to));
+        return ResultUtil.success();
+    }
+
+
+    @RequestMapping("/change")
+    public ResultUtil change(@RequestBody Map<String, String> params){
+        String account = params.get("email");
+        String code = params.get("codes");
+        if(!redisUtil.get(account).equals(code)){
+            return ResultUtil.failure(ResultCode.CODE_VERIFY_FAILURE);
+        }
+
+        String password = params.get("password");
+        User user = new User(account, password);
+        userMapper.changePassword(user);
+        redisUtil.del(account);
+        return ResultUtil.success();
     }
 
 
@@ -96,7 +139,7 @@ public class UserApi {
         String email = params.get("email");
         String codes = params.get("codes");
         System.out.println(email + ":" + codes);
-        if(registerCode.get(email).equals(codes)){
+        if(redisUtil.get("email").equals(codes)){
             return ResultUtil.success("验证成功");
         }
         return ResultUtil.failure(ResultCode.CODE_VERIFY_FAILURE);
@@ -117,7 +160,7 @@ public class UserApi {
         String password = params.get("password");
         User newUser = new User(account, username, password, 0, 1);
         userMapper.addUser(newUser);
-        registerCode.remove(account);
+        redisUtil.del(account);
 
         newsMapper.userUp(NewsApi.version);
 //        String account = "das";
@@ -141,4 +184,10 @@ public class UserApi {
         return ResultUtil.success(list);
     }
 
+    @RequestMapping("/getInfoByName")
+    public ResultUtil getInfoByName(@RequestBody Map<String, String> params){
+        String name = params.get("name");
+        Info info = infoMapper.getInfoByName(name);
+        return ResultUtil.success(info);
+    }
 }

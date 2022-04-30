@@ -13,4 +13,9 @@ public class User {
     String password;
     int root;
     int level;
+
+    public User(String account, String password){
+        this.account = account;
+        this.password = password;
+    }
 }

@@ -80,7 +80,7 @@ public class MailUtil extends Thread {
     public String ready() throws MessagingException {
         String code = createCode();
         //System.out.println(code);
-        message.setText("欢迎注册我的OJ！这是你的验证码：" + code);
+        message.setText("欢迎使用我的OJ！这是你的验证码：" + code);
         return code;
     }
 

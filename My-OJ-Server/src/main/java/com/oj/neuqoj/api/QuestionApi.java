@@ -129,6 +129,8 @@ public class QuestionApi {
         int lang = Integer.parseInt(params.get("lang"));
         //获取题目名，用于共享文件夹（每道题一个文件夹）
         String name = params.get("name");
+        //题目难度，用于统计
+        String level = params.get("level");
 
         //写入用户代码，false即为io报错，直接返回错误信息
         if(!new IOUtil().writeAns(answer, name, username, lang)){
@@ -152,13 +154,15 @@ public class QuestionApi {
         new Thread(task).start();
         if(!task.isDone()){ System.out.println("The task is running"); }
         //获取结果并返回
-        Map<String, Object> res;
+        Map<String, Object> res = null;
         try {
             res = task.get();
-        } catch (InterruptedException e) {
-            return ResultUtil.failure(ResultCode.JUDGE_SERVER_ERROR, "判题线程中断");
+        }catch (java.lang.NumberFormatException e){
+            return ResultUtil.failure(ResultCode.JUDGE_RUNTIME_EXCEPTION);
+        }catch (InterruptedException e) {
+            return ResultUtil.failure(ResultCode.JUDGE_SERVER_ERROR);
         } catch (ExecutionException e) {
-            return ResultUtil.failure(ResultCode.JUDGE_IO_ERROR, "判题执行错误");
+            return ResultUtil.failure(ResultCode.JUDGE_IO_ERROR);
         }
 
 
@@ -176,7 +180,7 @@ public class QuestionApi {
         Info info = infoMapper.getInfo(username);
         //更新用户数据
         if((Integer)res.get("status") == 1 && !info.hasPassed(num)){
-            info.pass(num, lang);
+            info.pass(num, lang, level);
             info.goodAt();
         }
         infoMapper.updateInfo(info);
